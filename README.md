@@ -1,2 +1,2 @@
-# cart315-2020-iterativeproject
- Repository of Alex and Hao iterative projects for CART315-2020.
+## CART315 - Digital Game Prototyping team iterative projects
+Repository of Alex and Hao projects for CART315-2020.
