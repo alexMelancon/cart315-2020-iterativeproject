@@ -42,8 +42,6 @@ public class Food : MonoBehaviour
             this.gameObject.GetComponent<Collider>().enabled = false;
             // Execute the AddBodyPart function tree times from the Player script so the player gets more challenge (not touching the tail)
             myPlayerScript.AddBodyPart();
-            myPlayerScript.AddBodyPart();
-            myPlayerScript.AddBodyPart();
             Debug.Log("Score++");
         }
     }

@@ -26,15 +26,13 @@ public class Death : MonoBehaviour
     {
     }
 
-    // When the sanke touches its own tail = Game over screen & resets the score to zero
+    // When the sanke touches its own tail = End screen
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == Player)
         {
-            // Reset the score to zero
-            Food.Score = 0;
             // Game Over screen
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

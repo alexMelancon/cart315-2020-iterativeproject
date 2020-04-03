@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 441750}
   - component: {fileID: 8179168053963504942}
+  - component: {fileID: 5976614043626769703}
+  - component: {fileID: 7170702249006788855}
+  - component: {fileID: 8469003221828306492}
   - component: {fileID: 6066962734735901618}
   m_Layer: 0
   m_Name: rock07
@@ -44,8 +47,47 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1085935, y: 3.1461453, z: 2.3587847}
-  m_Center: {x: -0.19892383, y: 1.6493523, z: -0.5539346}
+  m_Size: {x: 3.1085935, y: 3.1461453, z: 1.3020077}
+  m_Center: {x: -0.19892383, y: 1.6493523, z: -0.5623865}
+--- !u!65 &5976614043626769703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.95834297, y: 2.390666, z: 0.80117035}
+  m_Center: {x: -0.13987842, y: 1.1125326, z: 0.49906063}
+--- !u!65 &7170702249006788855
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.876014, y: 0.8211994, z: 0.8111019}
+  m_Center: {x: 1.0173525, y: 0.3675332, z: 0.79333305}
+--- !u!65 &8469003221828306492
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.227223, y: 0.5232005, z: 0.71567917}
+  m_Center: {x: 0.21677852, y: 0.23839974, z: -1.2794619}
 --- !u!114 &6066962734735901618
 MonoBehaviour:
   m_ObjectHideFlags: 0

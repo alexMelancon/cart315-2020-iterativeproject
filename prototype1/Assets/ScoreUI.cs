@@ -22,7 +22,7 @@ public class ScoreUI : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
         // Get the Score and insert it into a text
         scoreText.text = Food.Score.ToString();
     }
