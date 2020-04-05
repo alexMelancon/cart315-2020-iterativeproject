@@ -35,7 +35,7 @@ public class Food : MonoBehaviour
         { 
             // Add +1 to the score
             Score++;
-            // Start a delay function of 30 seconds
+            // Start a delay function of 60 seconds
             StartCoroutine(Reapparition());
             // Make the food pelet disappear
             this.gameObject.GetComponent<Renderer>().enabled = false;
@@ -48,8 +48,8 @@ public class Food : MonoBehaviour
 
     public IEnumerator Reapparition()
     {
-        // Start a delay of 30 seconds
-        yield return new WaitForSeconds(30.0f);
+        // Start a delay of 60 seconds
+        yield return new WaitForSeconds(60.0f);
         // Make the food pelet reappear
         this.gameObject.GetComponent<Renderer>().enabled = true;
         this.gameObject.GetComponent<Collider>().enabled = true;

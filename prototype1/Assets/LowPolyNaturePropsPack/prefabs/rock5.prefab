@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33688675799374900}
   - component: {fileID: 23640276114824448}
   - component: {fileID: 4541162822921566124}
+  - component: {fileID: 5194678787034563757}
   m_Layer: 0
   m_Name: rock5
   m_TagString: Untagged
@@ -87,8 +88,21 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832396019814904}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.93104076, y: 0.8376147, z: 0.56347644}
   m_Center: {x: -0.041875497, y: 0.3021722, z: 0.17948192}
+--- !u!114 &5194678787034563757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832396019814904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af3a99d2308c5046bbc752f63685c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}

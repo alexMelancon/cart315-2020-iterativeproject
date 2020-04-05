@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33789823452796298}
   - component: {fileID: 23308109391162996}
   - component: {fileID: 7498461950303270450}
+  - component: {fileID: 7893068636041064589}
   m_Layer: 0
   m_Name: rock12
   m_TagString: Untagged
@@ -87,8 +88,21 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050810324231342}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7613652, y: 0.97283936, z: 0.68083304}
   m_Center: {x: 0.023305893, y: 0.34685856, z: -0.15680847}
+--- !u!114 &7893068636041064589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050810324231342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af3a99d2308c5046bbc752f63685c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}

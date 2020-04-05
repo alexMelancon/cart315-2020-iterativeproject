@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33779082745488648}
   - component: {fileID: 23837613543607214}
   - component: {fileID: 7500277598985860478}
+  - component: {fileID: 4932312100894176164}
   m_Layer: 0
   m_Name: rock3
   m_TagString: Untagged
@@ -87,8 +88,21 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588695694357282}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.6152465, y: 0.72883487, z: 0.59229714}
   m_Center: {x: 0.021493882, y: 0.1685456, z: 0.13373676}
+--- !u!114 &4932312100894176164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588695694357282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af3a99d2308c5046bbc752f63685c66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
