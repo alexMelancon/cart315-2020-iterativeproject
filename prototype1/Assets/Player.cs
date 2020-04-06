@@ -14,6 +14,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject Planet;
+    public GameObject Planet2;
+    public GameObject Planet3;
+    public GameObject Planet4;
+    public GameObject PlayerPlaceholder;
+
     // These two floats can be changed in Unity also
     public float speed = 7;
 
@@ -268,6 +273,45 @@ public class Player : MonoBehaviour
 
         Quaternion toRotation = Quaternion.FromToRotation(transform.up, Groundnormal) * transform.rotation;
         transform.rotation = toRotation;
+    }
+
+
+    // CHANGE PLANET
+
+    // Changing planet to planet
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject == Planet)
+        {
+            Planet = Planet;
+            Debug.Log("On Planet 1");
+
+            PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
+        }
+
+        if (other.gameObject == Planet2)
+        {
+            Planet = Planet2;
+            Debug.Log("On Planet 2");
+
+            PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
+        }
+
+        if (other.gameObject == Planet3)
+        {
+            Planet = Planet3;
+            Debug.Log("On Planet 3");
+
+            PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
+        }
+
+        if (other.gameObject == Planet4)
+        {
+            Planet = Planet4;
+            Debug.Log("On Planet 4");
+
+            PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
+        }
     }
 
 }

@@ -32,4 +32,11 @@ public class PlayerPlaceholder : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, 0.1f);
     }
 
+
+    // CHANGE PLANET
+
+    public void NewPlanet(GameObject newPlanet)
+    {
+        Planet = newPlanet;
+    }
 }
