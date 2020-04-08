@@ -175,8 +175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You surely ate a lot, or tried! See below how much did you grow from all
-    of that!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -245,13 +244,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 23.60675}
   m_textInfo:
     textComponent: {fileID: 257005527}
-    characterCount: 81
+    characterCount: 0
     spriteCount: 0
-    spaceCount: 17
-    wordCount: 18
+    spaceCount: 0
+    wordCount: 0
     linkCount: 0
-    lineCount: 2
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -366,7 +365,6 @@ GameObject:
   - component: {fileID: 872810826}
   - component: {fileID: 872810825}
   - component: {fileID: 872810824}
-  - component: {fileID: 872810827}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -439,19 +437,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &872810827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872810823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fb2a92b98ab97d4cb272fc5f5e766d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!1 &872905799
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 402999077}
+  description: {fileID: 257005527}
 --- !u!114 &872905801
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -29,13 +29,20 @@ public class Death : MonoBehaviour
     // When the snake touches any death object
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Player)
+        if (other.gameObject == Player) //The Player object represents the snake's head only. Any impact on the tail won't trigger change
         {
-            Debug.Log("Death");
-            Debug.Log(this.gameObject.name);
-            Time.timeScale = 0;
+            //Debug.Log("Death");
+            //Debug.Log(this.gameObject.name);
             // Game Over screen
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //Wait a while before jumping to the gameover screen directly
+            StartCoroutine(Wait());
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
+
+    public IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+    }
+
 }

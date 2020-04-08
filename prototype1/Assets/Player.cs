@@ -261,8 +261,6 @@ public class Player : MonoBehaviour
                 Debug.Log("On Planet 1");
                 PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
             }
-
-            
         }
 
         if (other.gameObject == Planet2)
