@@ -1320,5 +1320,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/End.unity
-  playerPath: D:/Documents/Concordia/CART 315/Iteratives/cart315-2020-iterativeproject/prototype1/Builds/Mac
-    OS.app
+  playerPath: "D:/Users/alexa/Desktop/\xC9tudes/Universit\xE9/Concordia/Winter_2020/CART315/cart315-2020-iterativeproject/prototype1/Builds/Mac
+    OS.app"
