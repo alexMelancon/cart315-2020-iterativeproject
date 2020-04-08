@@ -26,13 +26,16 @@ public class Death : MonoBehaviour
     {
     }
 
-    // When the sanke touches its own tail = End screen
+    // When the snake touches any death object
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == Player)
         {
+            Debug.Log("Death");
+            Debug.Log(this.gameObject.name);
+            Time.timeScale = 0;
             // Game Over screen
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

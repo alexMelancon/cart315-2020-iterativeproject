@@ -37,6 +37,7 @@ public class PlayerPlaceholder : MonoBehaviour
 
     public void NewPlanet(GameObject newPlanet)
     {
+        Debug.Log(newPlanet);
         Planet = newPlanet;
     }
 }

@@ -13,7 +13,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject Planet;
+    private GameObject Planet;
+    public GameObject Planet1;
     public GameObject Planet2;
     public GameObject Planet3;
     public GameObject Planet4;
@@ -84,7 +85,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         // Precaution to take for bugs by constraining the player's Rigidbody rotation
         rb.freezeRotation = true;
-
+        Planet = Planet1;
         InitSnakeNodes();//set up the snake
     }
 
@@ -143,24 +144,6 @@ public class Player : MonoBehaviour
                 nodes[i].transform.position = headPositions[headPositions.Count - frameCounter - 1];
                 frameCounter += 3;
 
-                //curBodyPart = nodes[i];
-                //prevBodyPart = nodes[i - 1];
-
-                //distance = Vector3.Distance(prevBodyPart.transform.position, curBodyPart.transform.position);
-                //Debug.Log(distance);
-                //Vector3 newpos = prevBodyPart.transform.position;
-
-                //newpos.y = prevBodyPart.transform.position.y;
-
-                //float T = Time.deltaTime * distance / mindistance * speed;
-
-                //if (T > 0.5f)
-                //{
-                //T = 0.5f;
-                //curBodyPart.transform.position = Vector3.Slerp(curBodyPart.transform.position, newpos, T);
-                //curBodyPart.transform.rotation = Quaternion.Slerp(curBodyPart.transform.rotation, prevBodyPart.transform.rotation, T);
-                //}
-
             }
             
         } else
@@ -172,14 +155,6 @@ public class Player : MonoBehaviour
         //Now store the last bodypart's position to the position array
         Vector3 lastBodyPartPos = nodes[nodes.Count - 1].transform.position; //retrieve the last body part's position
         previousPositions.Add(lastBodyPartPos);//append said position to the list
-
-
-        //Add a body part wherever key Q is pressed
-        //if (Input.GetKeyDown(KeyCode.Q))
-        //{
-        //Debug.Log("Q pressed");
-        //AddBodyPart();
-        //}
     }
 
 
@@ -189,9 +164,6 @@ public class Player : MonoBehaviour
         float z = 0f;//vertical placement
         float x = 0f;
 
-        //old x and z:         
-        //float x = Input.GetAxis("Horizontal") * Time.deltaTime * speed; // if there is no horizontal input, x = 0
-        //float z = Input.GetAxis("Vertical") * Time.deltaTime * speed; // if there is no vertical input, z = 0
 
         if (isMoving == true)
         {
@@ -281,12 +253,16 @@ public class Player : MonoBehaviour
     // Changing planet to planet
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Planet)
+        if (other.gameObject == Planet1)
         {
-            Planet = Planet;
-            Debug.Log("On Planet 1");
+            if (Planet != Planet1)
+            {
+                Planet = Planet1;
+                Debug.Log("On Planet 1");
+                PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
+            }
 
-            PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
+            
         }
 
         if (other.gameObject == Planet2)
@@ -309,7 +285,6 @@ public class Player : MonoBehaviour
         {
             Planet = Planet4;
             Debug.Log("On Planet 4");
-
             PlayerPlaceholder.GetComponent<PlayerPlaceholder>().NewPlanet(Planet);
         }
     }
