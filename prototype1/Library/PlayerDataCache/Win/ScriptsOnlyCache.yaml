@@ -4,9 +4,9 @@ ScriptsOnlyBuild:
     - CameraGravity
     - CharacterSkinController
     - Death
+    - End
     - EnemyGravity
     - Food
-    - GameOver
     - Imphenzia.GradientSkyCamera
     - Menu
     - MovementInput
@@ -14,8 +14,8 @@ ScriptsOnlyBuild:
     - PlayerPlaceholder
     - ScoreUI
     - Shoot
-    - Timer
-    - Win
+    - Teleporter
+    - TryAgain
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -31,7 +31,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -41,6 +40,61 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/End.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9756}
+    - Class: 114
+      Script: {instanceID: 9928}
+    - Class: 114
+      Script: {instanceID: 9974}
+    - Class: 114
+      Script: {instanceID: 10002}
+    - Class: 114
+      Script: {instanceID: 10374}
+    - Class: 114
+      Script: {instanceID: 10794}
+    - Class: 114
+      Script: {instanceID: 11024}
+    - Class: 114
+      Script: {instanceID: 11144}
+    - Class: 114
+      Script: {instanceID: 11230}
+    - Class: 114
+      Script: {instanceID: 11296}
+    - Class: 114
+      Script: {instanceID: 11674}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Game.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -62,6 +116,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 74
@@ -69,6 +125,8 @@ ScriptsOnlyBuild:
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -79,21 +137,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9758}
+      Script: {instanceID: 9756}
+    - Class: 114
+      Script: {instanceID: 9826}
     - Class: 114
       Script: {instanceID: 9828}
     - Class: 114
-      Script: {instanceID: 9830}
-    - Class: 114
-      Script: {instanceID: 9930}
+      Script: {instanceID: 9928}
     - Class: 114
       Script: {instanceID: 10374}
     - Class: 114
       Script: {instanceID: 10430}
     - Class: 114
-      Script: {instanceID: 10502}
+      Script: {instanceID: 10638}
     - Class: 114
-      Script: {instanceID: 10640}
+      Script: {instanceID: 10842}
     - Class: 114
       Script: {instanceID: 11056}
     - Class: 114
@@ -107,7 +165,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11618}
     - Class: 114
-      Script: {instanceID: 11676}
+      Script: {instanceID: 11674}
+    - Class: 114
+      Script: {instanceID: 19942}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -127,59 +187,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
-      Script: {instanceID: 0}
-    Assets/Scenes/GameOver.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9758}
-    - Class: 114
-      Script: {instanceID: 9976}
-    - Class: 114
-      Script: {instanceID: 10204}
-    - Class: 114
-      Script: {instanceID: 10374}
-    - Class: 114
-      Script: {instanceID: 10796}
-    - Class: 114
-      Script: {instanceID: 11024}
-    - Class: 114
-      Script: {instanceID: 11230}
-    - Class: 114
-      Script: {instanceID: 11296}
-    - Class: 114
-      Script: {instanceID: 11642}
-    - Class: 114
-      Script: {instanceID: 11676}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -205,17 +212,19 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9758}
+      Script: {instanceID: 9756}
     - Class: 114
-      Script: {instanceID: 9976}
+      Script: {instanceID: 9974}
+    - Class: 114
+      Script: {instanceID: 10204}
     - Class: 114
       Script: {instanceID: 10374}
     - Class: 114
       Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 10578}
+      Script: {instanceID: 10576}
     - Class: 114
-      Script: {instanceID: 10796}
+      Script: {instanceID: 10794}
     - Class: 114
       Script: {instanceID: 11024}
     - Class: 114
@@ -227,58 +236,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11676}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Win.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9758}
-    - Class: 114
-      Script: {instanceID: 9930}
-    - Class: 114
-      Script: {instanceID: 9976}
-    - Class: 114
-      Script: {instanceID: 10374}
-    - Class: 114
-      Script: {instanceID: 11024}
-    - Class: 114
-      Script: {instanceID: 11144}
-    - Class: 114
-      Script: {instanceID: 11230}
-    - Class: 114
-      Script: {instanceID: 11296}
-    - Class: 114
-      Script: {instanceID: 11676}
+      Script: {instanceID: 11674}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -474,6 +432,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TryAgain
   - hash:
       serializedVersion: 2
       Hash: 234235b9fb07320d11497e08a726cc56
@@ -704,12 +668,6 @@ ScriptsOnlyBuild:
     className: CameraSwitch
   - hash:
       serializedVersion: 2
-      Hash: 19c04a376a24ae05dcf093a3341face7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Timer
-  - hash:
-      serializedVersion: 2
       Hash: 0574135745ea880aa1c1be2f2057ab89
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
@@ -920,6 +878,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 421a394e6dd5d2d5e9d98641aab29793
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Teleporter
+  - hash:
+      serializedVersion: 2
       Hash: 8216ca00094987954bcf22fd5ccf9bfd
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Cameras
@@ -1070,10 +1034,10 @@ ScriptsOnlyBuild:
     className: DynamicShadowSettings
   - hash:
       serializedVersion: 2
-      Hash: fd603770689195d8c21e05ad28422d62
+      Hash: 833d0a2ae904d7dfd175a34506400da5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Win
+    className: End
   - hash:
       serializedVersion: 2
       Hash: 428923bc6e394f67d7e43c7fdc2bc412
@@ -1226,7 +1190,7 @@ ScriptsOnlyBuild:
     className: WaterTile
   - hash:
       serializedVersion: 2
-      Hash: 801376f3b8a5e8094dfdb5cf90f0a965
+      Hash: ab713d95f7f8a609554f6c448db77cf9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -1284,12 +1248,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: 8649814970b42d345b89944b862453cc
@@ -1360,6 +1318,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  - Assets/Scenes/Win.unity
-  - Assets/Scenes/GameOver.unity
-  playerPath: "D:/Users/alexa/Desktop/\xC9tudes/Universit\xE9/Concordia/Winter_2020/CART315/cart315-2020-teamproject/prototype1/Builds/Prototype01.exe"
+  - Assets/Scenes/End.unity
+  playerPath: D:/Documents/Concordia/CART 315/Iteratives/cart315-2020-iterativeproject/prototype1/Builds/Windows/Prototype01.exe
